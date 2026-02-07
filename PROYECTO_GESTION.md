@@ -16,7 +16,7 @@
 
 ### 📊 Tablero de Gestión
 
-**Enlace al tablero:** [AGREGAR ENLACE DE TRELLO/JIRA AQUÍ]
+**Enlace al tablero:** [https://campu.atlassian.net/jira/software/projects/GM/boards/1](https://campu.atlassian.net/jira/software/projects/GM/boards/1)
 
 **Captura de pantalla del tablero al inicio del Sprint:**
 
