@@ -155,6 +155,21 @@ pytest -q
 
 ---
 
+## Git Flow y Convenciones de Commit
+
+- Este proyecto usa Git Flow (flujo con ramas tipo `feature/`, `release/`, `hotfix/`) en la medida que lo permita el taller. Cada integrante debe trabajar en su rama y abrir PRs contra `main`.
+- Los mensajes de commit deben seguir el estándar **Conventional Commits**. Ejemplos: `feat(rama-historias): añadir tabla de trazabilidad`, `fix: corregir eliminación de tarea`.
+- Para validar mensajes de commit localmente, habilita los hooks incluidos:
+
+```bash
+./scripts/setup-hooks.sh   # Bash/WSL/Git Bash
+# o (Windows PowerShell)
+.\scripts\setup-hooks.ps1
+```
+
+Los hooks se han añadido en `.githooks/commit-msg` y validan el formato básico.
+
+
 ## Checklist de entrega rápida
 - Completar los nombres de los integrantes en Sección 1.
 - Añadir el enlace al tablero.

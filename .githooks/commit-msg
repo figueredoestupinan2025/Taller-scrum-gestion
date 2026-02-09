@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Validate Conventional Commit messages
+MSG_FILE="$1"
+if [ -z "$MSG_FILE" ]; then
+  echo "No commit message file provided"
+  exit 1
+fi
+MSG=$(head -n1 "$MSG_FILE" | sed -e 's/\r$//')
+PATTERN='^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\([[:alnum:]._\- ]+\))?:\s.+$'
+if echo "$MSG" | grep -Eq "$PATTERN"; then
+  exit 0
+else
+  echo
+  echo "ERROR: Commit message does not follow Conventional Commits format."
+  echo "Expected: <type>(optional-scope): <description>"
+  echo "Examples:"
+  echo "  feat(rama-historias): agregar tabla de trazabilidad"
+  echo "  fix: corregir fallo al eliminar tarea"
+  echo
+  exit 1
+fi
