@@ -24,33 +24,6 @@
 ---
 
 ## Sección 2: Historias de Usuario (Integrante B - Product Owner)
-```markdown
-# 📋 Documento de Gestión Maestro
-## Gestión Integrada Scrum + GitHub
-
-**Asignatura:** Desarrollo de Software  
-**Duración:** 120 minutos  
-**Metodología:** Aprendizaje Basado en Proyectos (ABP)
-
----
-
-## Sección 1: Planificación (Integrante A - Scrum Master)
-
-### Nombres de los Integrantes y Roles
-- **Integrante A (Scrum Master / Facilitador):** [Scrum Master: sustituir por tu nombre]  
-- **Integrante B (Product Owner / Analista):** [Integrante B: sustituir por nombre]  
-- **Integrante C (QA / Developer):** [Integrante C: sustituir por nombre]
-
-### Enlace al Tablero de Gestión
-[Enlace a Trello o Jira: pega aquí la URL del tablero]
-
-### Captura de Pantalla del Tablero al Inicio del Sprint
-![Captura del Tablero Inicial](imagenes/tablero_inicial.png)  
-*(Añade aquí la captura del tablero con las HU en Backlog, To Do, etc.; si no hay imagen, sube el archivo a `imagenes/`)*
-
----
-
-## Sección 2: Historias de Usuario (Integrante B - Product Owner)
 
 ### 📝 Aplicación Lista de Tareas (Python)
 
@@ -72,42 +45,44 @@ Permitir a los usuarios:
 #### 📘 Historias de Usuario
 
 ##### HU-01: Ver lista de tareas
-# 📋 Documento de Gestión Maestro
-## Gestión Integrada Scrum + GitHub
+**Como** usuario  
+**Quiero** ver una lista de tareas registradas  
+**Para** conocer las tareas pendientes y completadas.
 
-**Asignatura:** Desarrollo de Software  
-**Duración:** 120 minutos  
-**Metodología:** Aprendizaje Basado en Proyectos (ABP)
+**Criterios de Aceptación:**
+- El sistema muestra todas las tareas.
+- Cada tarea indica su estado (completada o pendiente).
+- Si no hay tareas, se muestra un mensaje informativo.
 
----
+##### HU-02: Agregar tareas
+**Como** usuario  
+**Quiero** agregar nuevas tareas mediante un input  
+**Para** registrar actividades por realizar.
 
-## Sección 1: Planificación (Integrante A - Scrum Master)
+**Criterios de Aceptación:**
+- No se permiten tareas vacías.
+- Las tareas se agregan como pendientes.
+- El sistema confirma la creación de la tarea.
 
-### Nombres de los Integrantes y Roles
-- **Integrante A (Scrum Master / Facilitador):** [SCRUM_MASTER - sustituir por tu nombre]
-- **Integrante B (Product Owner / Analista):** [INTEGRANTE_B - sustituir por nombre]
-- **Integrante C (QA / Developer):** [INTEGRANTE_C - sustituir por nombre]
+##### HU-03: Marcar tareas como completadas
+**Como** usuario  
+**Quiero** marcar tareas como completadas  
+**Para** llevar control de las tareas realizadas.
 
-### Enlace al Tablero de Gestión
-[Enlace a Trello o Jira: pega aquí la URL del tablero]
+**Criterios de Aceptación:**
+- El usuario puede seleccionar una tarea existente.
+- La tarea cambia su estado a completada.
+- El sistema valida entradas incorrectas.
 
-### Captura de Pantalla del Tablero al Inicio del Sprint
-![Captura del Tablero Inicial](imagenes/tablero_inicial.png)
+##### HU-04: Eliminar tareas
+**Como** usuario  
+**Quiero** eliminar tareas  
+**Para** mantener la lista organizada.
 
----
-
-## Sección 2: Historias de Usuario (Integrante B - Product Owner)
-
-### 📝 Aplicación Lista de Tareas (Python)
-
-#### 📌 Descripción del Proyecto
-Este proyecto implementa una aplicación de consola en **Python 3** para gestionar una lista de tareas. El objetivo es evidenciar el trabajo de las HU, la trazabilidad y el uso correcto de ramas y PRs en GitHub.
-
-#### 🎯 Historias de Usuario implementadas
-- HU-01: Ver lista de tareas
-- HU-02: Agregar tareas mediante input
-- HU-03: Marcar tareas como completadas
-- HU-04: Eliminar tareas
+**Criterios de Aceptación:**
+- El usuario puede eliminar una tarea existente.
+- El sistema confirma la eliminación.
+- Se valida que el número de tarea sea correcto.
 
 #### 📊 Tabla de Trazabilidad
 
@@ -169,7 +144,6 @@ pytest -q
 
 Los hooks se han añadido en `.githooks/commit-msg` y validan el formato básico.
 
-
 ## Checklist de entrega rápida
 - Completar los nombres de los integrantes en Sección 1.
 - Añadir el enlace al tablero.
@@ -178,4 +152,3 @@ Los hooks se han añadido en `.githooks/commit-msg` y validan el formato básico
 - Pedir al menos una revisión y aprobación por PR antes de mergear.
 
 **Fin del Documento de Gestión Maestro**
-# 📋 Documento de Gestión Maestro
