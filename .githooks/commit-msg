@@ -6,7 +6,7 @@ if [ -z "$MSG_FILE" ]; then
   exit 1
 fi
 MSG=$(head -n1 "$MSG_FILE" | sed -e 's/\r$//')
-PATTERN='^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\([[:alnum:]._\- ]+\))?:\s.+$'
+PATTERN='^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\([[:alnum:]._\-]+\))?:\s.+$'
 if echo "$MSG" | grep -Eq "$PATTERN"; then
   exit 0
 else

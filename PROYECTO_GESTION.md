@@ -178,3 +178,4 @@ Los hooks se han añadido en `.githooks/commit-msg` y validan el formato básico
 - Pedir al menos una revisión y aprobación por PR antes de mergear.
 
 **Fin del Documento de Gestión Maestro**
+# 📋 Documento de Gestión Maestro
